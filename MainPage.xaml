@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP01.MainPage">
+
+    <StackLayout Padding="30">
+        <!--
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+            <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+            <Label FontSize="16" Padding="30,24,30,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Learn more at "/>
+                            <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        -->
+
+        <Label x:Name="titulo" FontSize="20" Padding="10" FontAttributes="Bold" FontFamily="Georgia">TP01 - Aplicação Teste</Label>
+
+        <Entry x:Name="user" Text="" Placeholder="Identificador" MaxLength="64" />
+        <Entry x:Name="pass" Text="" Placeholder="Senha" MaxLength="64" IsPassword="true"/>
+
+        <Button Clicked="onClickOk" x:Name="btnOk" Text="OK" ></Button>
+        <Button Clicked="onClickLimpar" x:Name="btnLimpar" Text="Limpar" ></Button>
+        <Button Clicked="onClickCreditos" x:Name="btnCreditos" Text="Créditos" ></Button>
+
+        <Label FontSize="12" Padding="0, 20, 0, 0">Registro de Eventos:</Label>
+        <Label x:Name="consoleLog"  FontSize="16" BackgroundColor="DarkBlue" TextColor="White" Padding="20"  FontFamily="Generic Monospace"></Label>
+
+    </StackLayout>
+
+</ContentPage>
